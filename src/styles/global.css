@@ -1,0 +1,15 @@
+@theme {
+  /* New, accessible color palette */
+  --color-brand-dark-brown: #4f433b; /* Base for dark backgrounds */
+  --color-brand-green: #6a994e;      /* Accessible accent for links and buttons */
+  --color-brand-light-green: #a7c957;/* For subtle hover effects */
+  --color-brand-off-white: #f7f7f7;  /* Clean background for content */
+  --color-brand-text: #333333;        /* High-contrast body text */
+  --color-brand-white: #ffffff;       /* Text on dark backgrounds */
+}
+
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
