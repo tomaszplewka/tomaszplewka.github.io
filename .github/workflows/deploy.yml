@@ -1,0 +1,20 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out your repository using git
+        uses: actions/checkout@v2
+
+      - name: Install, build, and deploy
+        uses: withastro/action@v0.2.1
+        with:
+          path: .
+          node-version: 22
+          package-manager: pnpm@latest
